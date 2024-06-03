@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 import MyCanvas from "@/components/MyCanvas";
+import MyCanvas2 from "@/components/MyCanvas2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <MyCanvas />
+        <div className="desktop">
+          <MyCanvas />
+        </div>
+        <div className="mobile">
+          <MyCanvas2 />
+        </div>
       </main>
     </>
   );
