@@ -410,8 +410,8 @@ const MyCanvas = () => {
     ];
 
     const layers2 = [
-      { url: "/guys.png", x: 400, y: 850 },
-      { url: "/cat.png", x: 1500, y: 950 },
+      { url: "/guys.png", x: 40, y: 80 },
+      { url: "/cat.png", x: 150, y: 90 },
     ];
 
     const addLayer = (canvas, url, left, top) => {
@@ -448,8 +448,8 @@ const MyCanvas = () => {
   }, [isCanvasInitialized]);
 
   return (
-    <div className={styles.Parent1}>
-      <canvas ref={canvasRef1} className={styles.canvas} id={styles.canvas1} />
+    <div className={styles.Parent1} id="test2">
+      <canvas ref={canvasRef1} className={styles.canvas} />
       <canvas ref={canvasRef2} className={styles.canvas2} />
     </div>
   );
